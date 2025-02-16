@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tips</title>
+    <title>Tip Calculator</title>
+    <link rel="icon" href="./coins-vector-icon.ico">
     <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -17,8 +18,10 @@
         <label>Tip percentage:</label>
         <input type="number" id="tip" />
         <button class="calc" onclick="calculate()">Calculate</button>
-        <label>Total:</label>
-        <div class="total">0.00</div>
+        <div class="total__wrapper">
+            <label>Total:</label>
+            <span class="total">0.00</span>
+        </div>
     </div>
 </body>
 <script src="index.js"></script>
