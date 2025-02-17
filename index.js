@@ -1,10 +1,11 @@
-let billElem = document.getElementById("bill");
-let tipElem =  document.getElementById("tip");
-let totalElem = document.getElementsByClassName("total")[0];
+const billElem = document.getElementById("bill");
+const tipElem =  document.getElementById("tip");
+const totalElem = document.getElementsByClassName("total")[0];
 
 
 function calculate() {
     let bill = Number(billElem.value);
     let tip = Number(tipElem.value);
-    totalElem.innerHTML = bill + (bill * tip / 100);
+    totalElem.style.visibility = "visible";
+    totalElem.innerHTML = (bill + (bill * tip / 100)).toFixed(2);
 }

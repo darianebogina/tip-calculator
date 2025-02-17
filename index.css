@@ -8,13 +8,9 @@ html {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     max-width: 1440px;
     margin: 0 auto;
-    /* margin: 0px 8px ; */
+
     font-size: 1.6rem;
     font-family: "Helvetica", Arial, sans-serif;
 
@@ -27,7 +23,7 @@ body {
     justify-content: space-around;
 
     max-width: 600px;
-    min-height: 400px;
+    min-height: 390px;
     margin: 100px auto;
     padding: 20px;
 
@@ -47,7 +43,7 @@ h1 {
 
 input {
     width: 100%;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
 
     border: 1px solid #ccc;
@@ -56,7 +52,7 @@ input {
 
 button {
     width: 100%;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
     
     font-size: 1.8rem;
@@ -75,5 +71,7 @@ button:hover {
 }
 
 .total {
-    display: none;
+    visibility: hidden;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
